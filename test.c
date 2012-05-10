@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 
 //main func
 int main(int argc, char *argv[]) 
