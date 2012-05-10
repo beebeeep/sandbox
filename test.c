@@ -4,7 +4,7 @@
 //main func
 int main(int argc, char *argv[]) 
 {
-	int i;
+	unsigned int i;
 	printf("Hello world!\n\n\nargc = %i\n", argc);
 	
 	for(i = 1; i < argc; i++) {
