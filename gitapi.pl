@@ -12,11 +12,11 @@ use JSON;
 my $ua = LWP::UserAgent->new();
 
 
-my $req1 = GET 'https://api.github.com/repos/beebeeep/sanbox/hooks';
+my $req1 = GET 'https://api.github.com/repos/beebeeep/sandbox/hooks';
 $req1->authorization_basic("beebeeep", "theidaiRoghei0ai");
 
 #my $req2 = HTTP::Request->new(POST => 'http://migalin.net/test.php');
-my $req2 = HTTP::Request->new(POST => 'https://api.github.com/repos/beebeeep/sanbox/hooks');
+my $req2 = HTTP::Request->new(POST => 'https://api.github.com/repos/beebeeep/sandbox/hooks');
 $req2->content( to_json( { 
 			name => 'web',
 			active => 'true',
@@ -27,7 +27,7 @@ $req2->content( to_json( {
 		}));
 $req2->authorization_basic("beebeeep", "theidaiRoghei0ai");
 
-my $response = $ua->request($req2);
+my $response = $ua->request($req1);
 
 print Dumper($response);
 
