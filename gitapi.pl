@@ -20,7 +20,7 @@ my $req2 = HTTP::Request->new(POST => 'https://api.github.com/repos/beebeeep/san
 $req2->content( to_json( { 
 			name => 'web',
 			active => 'true',
-			events => ['pull_request', 'push'],
+			events => ['pull_request', 'push', 'issues', 'issue_comment', 'commit_comment'],
 			config => {
 				url => "http://git.welltime.ru/api/hook.php"  
 			}
