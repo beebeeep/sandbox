@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-//main func
 int main(int argc, char *argv[]) 
 {
 	unsigned int i, j;
